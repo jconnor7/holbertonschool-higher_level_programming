@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 #check to see if random number is negative
 if number < 0:
     last = (abs(number) % 10) * -1
-    #grab the last digit of the random number
+#grab the last digit of the random number
 else:
     last = number % 10
 if last > 5:
