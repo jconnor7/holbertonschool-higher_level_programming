@@ -1,4 +1,4 @@
-# 0x02. Python - if/else, loops, functions
+# 0x02. Python - import & modules
 ---
 ## Description
 
