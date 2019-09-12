@@ -37,11 +37,11 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (cur->n >= number)
 		{
-			newnode->next = cur->next;
-			cur->next = newnode;
-				return (newnode);
+		    break;
 		}
 		cur = cur->next;
 	}
-
+    newnode->next = cur->next;
+    cur->next = newnode;
+return(newnode);
 }
