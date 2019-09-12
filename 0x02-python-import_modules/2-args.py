@@ -11,5 +11,5 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(len(sys.argv) - 1))
 
-        for index, data in enumerate(sys.argv, start=1):
+        for index, data in enumerate(sys.argv[1:], start = 1):
             print("{}: {}".format(index, data))
