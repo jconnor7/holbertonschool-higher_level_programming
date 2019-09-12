@@ -35,7 +35,7 @@ listint_t *insert_node(listint_t **head, int number)
 
 	while (cur) /* walk on list and insert node*/
 	{
-		if (cur->next->n >= number)
+		if (cur->n >= number)
 		{
 			newnode->next = cur->next;
 			cur->next = newnode;
@@ -44,6 +44,4 @@ listint_t *insert_node(listint_t **head, int number)
 		cur = cur->next;
 	}
 
-	cur->next = newnode;
-		return (newnode);
 }
