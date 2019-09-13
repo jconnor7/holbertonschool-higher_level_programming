@@ -7,7 +7,6 @@
 
 * [About](#about)
 * [Requirements](#requirements)
-* [Credits](#credits)
 * [Intallation](#Installation)
 
 ## About
