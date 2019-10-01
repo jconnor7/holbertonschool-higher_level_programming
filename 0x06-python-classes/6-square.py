@@ -31,17 +31,17 @@ class Square:
             if you have a setter and getter you don't need to interact
             with private so that you don't mess up the values
         """
-        if self.size == 0:
+        if self.__size == 0:
             print()
             return
 
-        for y_space in range(self.position[1]):
+        for y_space in range(self.__position[1]):
             print()
 
-        for row in range(self.size):
-            for x_space in range(self.position[0]):
+        for row in range(self.__size):
+            for x_space in range(self.__position[0]):
                 print(" ", end="")
-            for col in range(self.size):
+            for col in range(self.__size):
                 print("#", end="")
             print()
 
@@ -82,8 +82,7 @@ class Square:
     @position.setter
     def position(self, value):
         if not (isinstance(value, tuple) or len(value) == 2 or
-                isinstance(value[0], int) or
-                isinstance(value[1], int) or value[0] < 0 or
-                value[1] < 0):
+                isinstance(value[0], int) or isinstance(value[1], int) or
+                value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
