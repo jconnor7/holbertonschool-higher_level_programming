@@ -33,7 +33,7 @@ class Square:
         """
         if self.size == 0:
             print()
-            pass
+            return
 
         for y_space in range(self.position[1]):
             print()
