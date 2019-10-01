@@ -21,8 +21,8 @@ class Square:
         if self.__size == 0:
             print()
         for col in range(self.__size):
-            for row in range (self.__size):
-                print("#", end ="")
+            for row in range(self.__size):
+                print("#", end="")
             print()
 
     @property
@@ -46,4 +46,3 @@ class Square:
 
         else:
             self.__size = value
-
