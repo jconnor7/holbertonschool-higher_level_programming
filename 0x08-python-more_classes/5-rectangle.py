@@ -35,10 +35,9 @@ class Rectangle:
         if self.__width == 0 or self.height == 0:
             return("")
         else:
-            for col in range(self.__height):
-                for row in range(self.__height - 1):
-                    print("#" * self.__width)
-                return ("#" * self.width)
+            for row in range(self.__height - 1):
+                print("#" * self.__width)
+            return ("#" * self.width)
 
     def __repr__(self):
         """Returns official string representation of an instance"""
