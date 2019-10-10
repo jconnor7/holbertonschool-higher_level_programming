@@ -1,5 +1,8 @@
 # 0x08. Python - More Classes and Objects
 ---
+
+<img align="center" src="https://www.guru99.com/images/uploads/2012/06/Java_Abstract.png" width="40%"/>
+
 ## Description
 
 This project in the High Level Programming series is about:
