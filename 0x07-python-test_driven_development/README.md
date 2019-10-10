@@ -19,5 +19,4 @@ File|Task
 4-print_square.py | Prints a square using the # character
 5-text_indentation.py | Prints text with 2 new lines after .?:
 6-max_integer.py | Finds the max integer in a list
-test/6-max_integer_test.py | Unittest for max_int
 tests | Test cases for all functions
