@@ -1,5 +1,5 @@
 #!/usr/bin/python3.4
-"""
+""" Lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa
 """
 
 import MySQLdb
@@ -19,5 +19,6 @@ if __name__ == "__main__":
 
     for state in query_rows:
         print(state)
+
     cursor.close()
     db.close()
