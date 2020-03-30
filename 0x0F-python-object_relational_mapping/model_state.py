@@ -1,4 +1,4 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 """ Class Definition of a State and an instance Base = declarative_base()
 """
 
@@ -14,7 +14,6 @@ class State(Base):
     """
     __tablename__ = "states"
 
-    id = Columnn(Integer, primary_key=True, nullable=False, autoincrement=True)
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
 
     name = Column(String(128), nullable=False)
-
