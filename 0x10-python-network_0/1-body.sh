@@ -1,3 +1,3 @@
 #!/bin/bash
 # Script takes URL and GET rqst display body rspns
-curl -sL "$1
+curl -sL GET "$1"
