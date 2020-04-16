@@ -24,6 +24,6 @@ if __name__ == "__main__":
         req_json = req.json()
 
     if len(req_json) == 0:
-        print("No Result")
+        print("No result")
     else:
         print("[{}] {}".format(req_json['id'], req_json['name']))
