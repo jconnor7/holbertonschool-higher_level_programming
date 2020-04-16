@@ -8,6 +8,6 @@ import urllib.request
 from sys import argv
 
 if __name__ == "__main__":
-    with urllib.request.urlopen('https://intranet.hbtn.io') as response:
+    with urllib.request.urlopen(argv[1]) as response:
         dict_info = response.info()
         print(dict_info['X-Request-Id'])
