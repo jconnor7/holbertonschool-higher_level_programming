@@ -10,7 +10,7 @@ from sys import argv
 
 if __name__ == "__main__":
 
-    url = "http://0.0.0.0:5000/search_user"
+    url = "http://b9a9168cd2ea.19.hbtn-cod.io:5000/search_user"
     letter = argv[1] if len(argv) == 2 else ""
 
     data = {'q': letter}
@@ -20,6 +20,7 @@ if __name__ == "__main__":
 
     if type_req != 'application/json':
         print("Not a valid JSON")
+        exit()
     else:
         req_json = req.json()
 
