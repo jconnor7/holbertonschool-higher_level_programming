@@ -9,12 +9,15 @@ import urllib.parse
 import urllib.request
 from sys import argv
 
-url = argv[1]
-values = {'email': argv[2]}
+if __name__ == "__main__":
 
-data = urllib.parse.urlencode(values).encode('utf-8')
+    url = argv[1]
+    values = {'email': argv[2]}
 
-req = urllib.request.Request(url, data)
-with urllib.request.urlopen(req) as response:
-    body_resp = response.read().decode('utf-8')
-    print(body_resp)
+    data = urllib.parse.urlencode(values).encode('utf-8')
+
+    req = urllib.request.Request(url, data)
+    response: object
+    with urllib.request.urlopen(req) as response:
+        body_resp = response.read().decode('utf-8')
+        print(body_resp)
