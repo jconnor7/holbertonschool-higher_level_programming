@@ -21,4 +21,9 @@ def find_peak(list_of_integers):
         if 0 < i < size - 1:
             if list_int[i - 1] < list_int[i] > list_int[i + 1]:
                 peak = list_int[i]
+        if i == 0 and list_int[0] > list_int[1]:
+            peak = list_int[0]
+        if i == size - 1 and list_int[size - 1] > list_int[size - 2]:
+            peak = list_int[size - 1]
+
     return peak
