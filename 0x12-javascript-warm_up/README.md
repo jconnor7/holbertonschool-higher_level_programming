@@ -29,7 +29,7 @@ File|Task
 1-multi_languages.js | A script that prints 3 lines about C, Python and JS
 2-arguments.js | Prints a message depending of the number of arguments passed
 3-value_argument.js | Prints the first argument passed to it
-4-concat.js | A script that prints two arguments passed to it, a + is + b
+4-concat.js | A script that prints two arguments passed to it, argv[2] + is + argv[3]
 5-to_integer.js | Prints My number: <first argument converted in integer> if the first argument can be converted to an integer
 6-multi_languages_loop.js | Prints 3 lines using an array of string and a loop
 7-multi_c.js | A script that prints x times C is fun
