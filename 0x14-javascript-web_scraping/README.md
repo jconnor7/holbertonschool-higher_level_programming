@@ -1,7 +1,6 @@
 0x14-javascript-web_scraping
 ---
 
-
 ## Description
 This project in the High Level Programming series is about:
 * How to manipulate JSON data
@@ -21,3 +20,12 @@ File|Task
 5-request_store.js | A script that gets the contents of a webpage and stores it in a file
 6-completed_tasks.js | A script that computes the number of tasks completed by user id
 
+## Notes
+
+If handling with some jetbrains ide try to make the folder as root of the project and 
+install required npm module and save it as a project dependency (it will appear in package.json)
+
+```sh
+$ npm init --yes´
+$ npm install request --save´
+``` 
