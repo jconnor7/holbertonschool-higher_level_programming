@@ -2,7 +2,7 @@
 // A script that computes the number of tasks completed by user id
 
 const request = require('request');
-const url = process.argv[2] + '?completed=true';
+const url = process.argv[2];
 const newDict = {};
 
 request(url, function (error, response, body) {
@@ -11,10 +11,12 @@ request(url, function (error, response, body) {
   } else {
     const jsonBody = JSON.parse(body);
     for (const data of jsonBody) {
-      if (data.userId in newDict) {
-        newDict[data.userId] = newDict[data.userId] + 1;
-      } else {
-        newDict[data.userId] = 1;
+      if (data.completed === true) {
+        if (data.userId in newDict) {
+          newDict[data.userId] = newDict[data.userId] + 1;
+        } else {
+          newDict[data.userId] = 1;
+        }
       }
     }
   }
