@@ -12,7 +12,7 @@ request(url, function (error, response, body) {
     const jsonBody = JSON.parse(body);
     for (const data of jsonBody) {
       if (data.userId in newDict) {
-        newDict[data.userId] += 1;
+        newDict[data.userId] = newDict[data.userId] + 1;
       } else {
         newDict[data.userId] = 1;
       }
