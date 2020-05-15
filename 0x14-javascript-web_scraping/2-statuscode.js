@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// A script that writes a string to a file
+// A script that display the status code of a GET request
 
 const Request = require('request');
 const url = process.argv[2];
